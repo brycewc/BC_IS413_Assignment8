@@ -19,7 +19,7 @@
                 <td class="text-left">@line.Book.Title </td>
                 <td class="text-center">@line.Quantity</td>
                 <td class="text-right">$@line.Book.Price</td>
-                <td class="text-right">@((line.Quantity * line.Book.Price).ToString("c"))</td>
+                <td class="text-right">@((line.Quantity * line.Book.Price).ToString("c"))</td> <!--ToString("c") specifies currency and adds a $ to the front-->
             </tr>
         }
     </tbody>

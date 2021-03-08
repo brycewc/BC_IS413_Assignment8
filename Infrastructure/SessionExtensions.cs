@@ -9,6 +9,7 @@ namespace BC_IS413_Assignment8.Infrastructure
 {
     public static class SessionExtensions
     {
+        //Creates sessions
         public static void SetJson (this ISession session, string key, object value)
         {
             session.SetString(key, JsonSerializer.Serialize(value));
