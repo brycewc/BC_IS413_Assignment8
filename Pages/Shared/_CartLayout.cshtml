@@ -9,8 +9,14 @@
         <div class="bg-dark text-white p-2">
             <span class="navbar-brand ml-2">Amazon Bookstore</span>
         </div>
-        <div class="m-1 P-1">
-            @RenderBody()
-        </div>
+        <main role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
